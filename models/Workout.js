@@ -1,6 +1,8 @@
+// reference mongoose and define Schema
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+// define WorkoutSchema
 const WorkoutSchema = new Schema({
   day: {
     type: Date,
@@ -14,6 +16,8 @@ const WorkoutSchema = new Schema({
   ]
 });
 
+// create Workout model from WorkoutSchema
 const Workout = mongoose.model("Workout", WorkoutSchema);
 
+// export the model
 module.exports = Workout;
