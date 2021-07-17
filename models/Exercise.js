@@ -4,13 +4,38 @@ const Schema = mongoose.Schema;
 
 // define ExerciseSchema
 const ExerciseSchema = new Schema({
-  type: String,
-  name: String,
-  duration: Number,
-  distance: Number,
-  weight: Number,
-  reps: Number,
-  sets: Number
+  type: {
+    type: String,
+    trim: true,
+    require: true
+  },
+
+  name: {
+    type: String,
+    trim: true,
+    require: true
+  },
+
+  duration: {
+    type: Number,
+    duration: true
+  },
+
+  distance: {
+    type: Number
+  },
+  
+  weight: {
+    type: Number
+  },
+  
+  reps: {
+    type: Number
+  },
+
+  sets: {
+    type: Number
+  }
 });
 
 // create Exercise model from ExerciseSchema
