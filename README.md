@@ -1,7 +1,7 @@
 # Fitness Tracker
 
 ## Link
-
+https://iamalittleforest-18-fitness.herokuapp.com/
 
 ## Languages & Technologies
 * HTML / CSS / Javascript
