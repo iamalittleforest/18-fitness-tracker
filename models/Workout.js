@@ -43,10 +43,6 @@ const WorkoutSchema = new Schema({
       type: Number
     }
   }],
-
-  totalDuration: {
-    type: Number
-  }
 });
 
 // create Workout model from WorkoutSchema
