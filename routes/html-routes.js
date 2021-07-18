@@ -4,17 +4,17 @@ var path = require("path");
 
 // index route
 router.get("/", (req, res) => {
-  res.sendFile(path.join(_dirname, "../public/index.html"));
+  res.sendFile(path.join(__dirname, "../public/index.html"));
 });
 
 // exercise route
 router.get("/exercise", (req, res) => {
-  res.sendFile(path.join(_dirname, "../public/exercise.html"));
+  res.sendFile(path.join(__dirname, "../public/exercise.html"));
 });
 
 // stats route
 router.get("/stats", (req, res) => {
-  res.sendFile(path.join(_dirname, "../public/stats.html"));
+  res.sendFile(path.join(__dirname, "../public/stats.html"));
 });
 
 // export router
