@@ -4,7 +4,6 @@ var db = require("../models");
 // get all workouts (for last workout)
 router.get("/api/workouts", (req, res) => {
   db.Workout.find({})
-    .populate("exercises")
     .then(dbWorkout => {
       res.json(dbWorkout);
     })
@@ -39,7 +38,6 @@ router.post("/api/workouts", ({ body }, res) => {
 // get all workouts in range
 router.get("/api/workouts/range", (req, res) => {
   db.Workout.find({})
-    .populate("exercises")
     .then(dbWorkout => {
       res.json(dbWorkout);
     })
