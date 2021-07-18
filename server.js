@@ -3,9 +3,6 @@ const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
 
-// import models
-const db = require("./models");
-
 // create the Express App
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -21,7 +18,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 // set up the Express app to use routes
-app.use(require("./routes/api.js"));
+app.use(require("./routes/api-routes.js"));
+app.use(require("./routes/html-routes.js"));
 
 // connect to MongoDB
 mongoose.connect(
