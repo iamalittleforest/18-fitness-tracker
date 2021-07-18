@@ -10,7 +10,7 @@ router.get("/api/workouts", (req, res) => {
     })
     .catch(err => {
       res.json(err);
-    })
+    });
 })
 
 // put workout (by adding exercise)
@@ -31,7 +31,14 @@ router.post("/api/workouts", ({ body }, res) => {
 
 // get all workouts in range
 router.get("/api/workouts/range", (req, res) => {
-
+  db.Workout.find({})
+    .populate("exercises")
+    .then(dbWorkout => {
+      res.json(dbWorkout);
+    })
+    .catch(err => {
+      res.json(err);
+    });
 })
 
 module.exports = router;
