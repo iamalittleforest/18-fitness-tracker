@@ -1,3 +1,4 @@
+// import dependencies
 const router = require("express").Router();
 var path = require("path");
 
@@ -16,4 +17,5 @@ router.get("/stats", (req, res) => {
   res.sendFile(path.join(_dirname, "../public/stats.html"));
 });
 
+// export router
 module.exports = router;
