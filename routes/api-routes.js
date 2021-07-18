@@ -15,7 +15,14 @@ router.get("/api/workouts", (req, res) => {
 
 // put workout (by adding exercise)
 router.put("/api/workouts/:id", (req, res) => {
-
+  db.Workout.findOneAndUpdate(
+    { _id: req.params.id }, { $push: { exercises: req.body } }, { new: true })
+    .then(dbWorkout => {
+      res.json(dbWorkout);
+    })
+    .catch(err => {
+      res.json(err);
+    });
 })
 
 // post new workout
