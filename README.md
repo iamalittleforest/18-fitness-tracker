@@ -5,10 +5,10 @@ https://iamalittleforest-18-fitness.herokuapp.com/
 
 ## Languages & Technologies
 * HTML / CSS / Javascript
-* Express Package
+* Express 
 * MongoDB
-* Mongoose Package
-* Morgan Package
+* Mongoose 
+* Morgan 
 * Heroku 
 * MongoDB Atlas
 
@@ -16,10 +16,9 @@ https://iamalittleforest-18-fitness.herokuapp.com/
 An application that functions as a workout tracker.
 
 ## Screenshot
-<img src="assets/images/README-screenshot.png" alt="screenshot">
+<img src="assets/images/README-screenshot1.png" alt="index">
 
-## Demo
-<img src="assets/images/README-demo.gif" alt="demo">
+<img src="assets/images/README-screenshot2.png" alt="dashboard">
 
 ## License
 MIT License
